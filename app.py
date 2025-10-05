@@ -7,13 +7,17 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+from nltk.tokenize import word_tokenize
 
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
     nltk.download("punkt", quiet=True)
 
-from nltk.tokenize import word_tokenize
+try:
+    nltk.data.find("corpora/stopwords")
+except LookupError:
+    nltk.download("stopwords")
 
 # Initialize stemmer
 ps = PorterStemmer()
