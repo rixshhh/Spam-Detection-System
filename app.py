@@ -8,9 +8,16 @@ from nltk.stem.porter import PorterStemmer
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt", quiet=True)
+
+from nltk.tokenize import word_tokenize
+
 # Initialize stemmer
 ps = PorterStemmer()
-nltk.download('punkt')
+
 
 # ---------- Text preprocessing ----------
 def transform_text(text: str) -> str:
