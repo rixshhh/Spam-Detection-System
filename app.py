@@ -10,6 +10,7 @@ from wordcloud import WordCloud
 
 # Initialize stemmer
 ps = PorterStemmer()
+nltk.download('punkt')
 
 # ---------- Text preprocessing ----------
 def transform_text(text: str) -> str:
