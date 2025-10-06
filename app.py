@@ -136,7 +136,7 @@ with tab2:
             with vis_tab2:
                 st.subheader("Word Cloud of Spam Messages")
                 if all_text:
-                    wordcloud = WordCloud(width=800, height=400, background_color="white").generate(all_text)
+                    wordcloud = WordCloud(width=800, height=400, background_color="black").generate(all_text)
                     fig_wc, ax_wc = plt.subplots(figsize=(10,5))
                     ax_wc.imshow(wordcloud, interpolation="bilinear")
                     ax_wc.axis("off")
