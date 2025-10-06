@@ -4,6 +4,13 @@ This repository contains a **Spam Detection System** that classifies messages (S
 
 ---
 
+## 🚀 Live Demo
+
+- 🌐 [Web App (Render Deployment)](https://spam-detection-system-2.onrender.com)  
+- 🌐 [Web App (Streamlit Deployment)](https://spam-detection-system-st.streamlit.app/)
+
+---
+
 ## 📑 Table of Contents  
 
 - [Introduction](#-introduction)  
