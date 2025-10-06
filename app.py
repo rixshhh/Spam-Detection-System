@@ -19,6 +19,8 @@ try:
 except LookupError:
     nltk.download("stopwords")
 
+nltk.download('punkt_tab')
+
 # Initialize stemmer
 ps = PorterStemmer()
 
